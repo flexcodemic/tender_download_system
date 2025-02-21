@@ -1,40 +1,22 @@
-📄 Tender Download System
+# 📄 Tender Download System
 
-📌 Introduction
+## 📌 Introduction
 
 The Tender Download System is a simple web application built with Vue 3 + Vite that allows users to browse available tenders, view details, and download tender documents. The system also includes authentication (login/logout) and a search functionality to filter tenders.
 
-This project follows best industry practices using:
+- This project follows best industry practices using:
 
-Vue 3 (Composition API) for building UI components.
+- Vue 3 (Composition API) for building UI components.
 
-Pinia for state management.
+- Pinia for state management.
 
-Vue Router for navigation.
+- Vue Router for navigation.
 
-Bootstrap for styling.
+- Bootstrap for styling.
 
 🚀 Features
 
 ✔️ Browse a list of tenders with title, description, and deadline.✔️ Download tender documents.✔️ Search for tenders using keywords.✔️ User authentication (Login & Logout).✔️ Pinia for state management.✔️ Bootstrap UI for styling and responsiveness.✔️ Error handling for data fetching issues.✔️ (Future) Pagination for large datasets.
-
-📂 Project Folder Structure
-
-src/
-│── components/
-│   ├── Navbar.vue
-│   ├── TenderList.vue    # Component for displaying tenders
-│── views/
-│   ├── HomeView.vue      # Tender Listing Page
-│   ├── LoginView.vue     # Authentication Page
-│── router/
-│   ├── index.js          # Routes for navigation
-│── store/
-│   ├── tenderStore.js    # Pinia store for managing tenders
-│── data/
-│   ├── tenders.js        # Dummy data for tenders
-│── App.vue               # Root component
-│── main.js               # Application entry point
 
 🛠️ Setup & Installation
 
@@ -57,27 +39,27 @@ The app will be available at: http://localhost:5173/
 
 🔹 Tender Listing Page
 
-Fetches tenders from data/tenders.js (mock data).
+- Fetches tenders from data/tenders.js (mock data).
 
-Displays tender title, description, and deadline.
+- Displays tender title, description, and deadline.
 
-Users can download tender documents.
+- Users can download tender documents.
 
-Users can search for tenders by title.
+- Users can search for tenders by title.
 
 🔹 State Management (Pinia)
 
-tenderStore.js stores and manages tender data.
+- tenderStore.js stores and manages tender data.
 
-fetchTenders() loads tenders.
+- fetchTenders() loads tenders.
 
-filteredTenders() returns tenders based on search input.
+- filteredTenders() returns tenders based on search input.
 
 🔹 Authentication System
 
-Users must log in before accessing the tenders.
+- Users must log in before accessing the tenders.
 
-After logging in, the Logout button appears.
+- After logging in, the Logout button appears.
 
 📌 Next Steps
 
